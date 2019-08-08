@@ -9,7 +9,7 @@
 		"features": [
 			{
 				"name": "3D Events Engine",
-				"path": "/3d-events-over-time",
+				"path": "https://3d-event-engine.netlify.com/",
 				"thumb": {
 					"image": "3d-events-thumb.jpg",
 					"alt": "Image thumbnail of 3D events engine app"
