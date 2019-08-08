@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{meta.name}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./public/style.css">
+</head>
+<body>
+	<h1 class="hero-headline">{{headline}}</h1>
+	<p class="hero-intro">{{intro}}</p>
+	{{#if features}}
+	<ul class="features-list">
+		{{#each features}}
+		{{> homepage-feature }}
+		{{/each}}
+	</ul>
+	{{/if}}
+</body>
+</html>

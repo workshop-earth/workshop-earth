@@ -1,0 +1,34 @@
+$mod: 'features';
+.#{$mod}-list {
+	margin-top: 2em;
+}
+.#{$mod}-item {
+	background: whitesmoke;
+	border: 2px solid #eee;
+	border-radius: 7px;
+	overflow: hidden;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	width: 300px;
+}
+.#{$mod}-img {
+	width: 100%;
+	height: auto;
+}
+.#{$mod}-link {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: black;
+}
+.#{$mod}-copy {
+	padding: 1em 1em 1.4em;
+}
+.#{$mod}-title {
+	text-decoration: underline;
+	margin-bottom: 0.7em;
+}
+.#{$mod}-disc {
+	display: block;
+	margin-top: 1em;
+}
