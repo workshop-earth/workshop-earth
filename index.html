@@ -6,18 +6,54 @@
 	<link rel="stylesheet" type="text/css" href="./public/style.css">
 </head>
 <body>
-	<h1 class="hero-headline">Workshop.earth</h1>
-	<p class="hero-intro">Tools to visualize seismology concepts and data.</p>
-	<ul class="features-list">
-		<li class="features-item">
-			<a href="https://3d-event-engine.netlify.com/" class="features-link">
-				<img class="features-img" src="public/img/thumb/3d-events-thumb.jpg" alt="Image thumbnail of 3D events engine app"/>
-				<div class="features-copy">
-					<h2 class="features-title">3D Events Engine</h2>
-					<p class="features-blurb">On July 5th 2019 a magnitude 7.1 earthquake struck Ridgecrest, CA. Effects were felt for miles and aftershocks were numerous. It&#x27;s scale is visualized here.</p>
-					<small class="features-disc">Currently the engine is hard-coded with this specific dataset.</small>
-				</div>
-			</a>
-		</li>	</ul>
+	<div class="grid">
+		<header>
+			<div class="hero">
+				<h1 class="hero-headline">Workshop.earth</h1>
+				<p class="hero-intro">Tools to visualize seismology concepts and data.</p>
+			</div>
+		<nav class="features-nav">
+			<ul class="features-list">
+				<li class="features-item">
+					<a href="#3d-event-engine" class="features-link">
+						<div class="features-img-holder">
+							<img class="features-img" src="public/img/thumb/3d-events-thumb.jpg" alt="Image thumbnail of 3D events engine app"/>
+						</div>
+						<div class="features-copy">
+							<h2 class="features-title">3D Event Engine</h2>
+							<p class="features-blurb">On July 5th 2019 a magnitude 7.1 earthquake struck Ridgecrest, CA. Effects were felt for miles and aftershocks were numerous. It&#x27;s scale is visualized here.</p>
+							<small class="features-disc">Currently the engine is hard-coded with this specific dataset.</small>
+						</div>
+					</a>
+				</li>				<li class="features-item">
+					<a href="#surface-generator" class="features-link">
+						<div class="features-img-holder">
+							<img class="features-img" src="public/img/thumb/placeholder-thumb.png" alt="Image thumbnail of Surface Generator app"/>
+						</div>
+						<div class="features-copy">
+							<h2 class="features-title">Surface Generator</h2>
+							<p class="features-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget.</p>
+							<small class="features-disc">To be developed.</small>
+						</div>
+					</a>
+				</li>			</ul>
+		</nav>
+		</header>
+		<main>
+			<section id="about" class="section">
+				<h2 class="section-title">About workshop.earth</h2>
+				<p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere, quam et aliquet vehicula, ante ex elementum enim, ut vestibulum nisi nulla a odio. Nulla quis erat eget ex iaculis dapibus eu non dolor. Vestibulum sodales diam nunc, vitae maximus purus congue vitae. Curabitur dictum mauris eu ante mattis, sit amet fermentum felis elementum. Etiam auctor tristique est, quis imperdiet lorem. Suspendisse a molestie lorem. In congue bibendum sem a placerat.</p>
+			</section>
+
+				<section id="3d-event-engine" class="section">
+					<h2 class="section-title">3D Event Engine</h2>
+					<p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere, quam et aliquet vehicula, ante ex elementum enim, ut vestibulum nisi nulla a odio. Nulla quis erat eget ex iaculis dapibus eu non dolor. Vestibulum sodales diam nunc, vitae maximus purus congue vitae. Curabitur dictum mauris eu ante mattis, sit amet fermentum felis elementum. Etiam auctor tristique est, quis imperdiet lorem. Suspendisse a molestie lorem. In congue bibendum sem a placerat.</p>
+					<a class="section-link" href="https://3d-event-engine.netlify.com/" target="_blank">Launch<span class="visually-hidden"> 3D Event Engine</span></a>
+				</section>				<section id="surface-generator" class="section">
+					<h2 class="section-title">Surface Generator</h2>
+					<p class="section-intro">To be developed.</p>
+				</section>			
+		</main>
+	</div>
 </body>
 </html>

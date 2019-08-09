@@ -8,25 +8,34 @@ $mod: 'features';
 	border-radius: 7px;
 	overflow: hidden;
 	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-	width: 300px;
-}
-.#{$mod}-img {
-	width: 100%;
-	height: auto;
 }
 .#{$mod}-link {
 	text-decoration: none;
-	display: block;
 	height: 100%;
 	width: 100%;
 	color: black;
+	display: flex;
+}
+.#{$mod}-img-holder {
+	display: flex;
+	align-items: center;
+	background: white;
+}
+.#{$mod}-img {
+	width: 150px;
+	height: 150px;
+	flex-shrink: 0;
 }
 .#{$mod}-copy {
-	padding: 1em 1em 1.4em;
+	padding: 0.8em;
 }
 .#{$mod}-title {
+	font-size: 1em;
 	text-decoration: underline;
 	margin-bottom: 0.7em;
+}
+.#{$mod}-blurb {
+	font-size: 0.8em;
 }
 .#{$mod}-disc {
 	display: block;

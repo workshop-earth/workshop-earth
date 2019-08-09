@@ -6,14 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="./public/style.css">
 </head>
 <body>
-	<h1 class="hero-headline">{{headline}}</h1>
-	<p class="hero-intro">{{intro}}</p>
-	{{#if features}}
-	<ul class="features-list">
-		{{#each features}}
-		{{> homepage-feature }}
-		{{/each}}
-	</ul>
-	{{/if}}
+	<div class="grid">
+		<header>
+			<div class="hero">
+				<h1 class="hero-headline">{{headline}}</h1>
+				<p class="hero-intro">{{intro}}</p>
+			</div>
+		{{#if features}}
+		<nav class="features-nav">
+			<ul class="features-list">
+				{{#each features}}
+				{{> homepage-feature }}
+				{{/each}}
+			</ul>
+		</nav>
+		{{/if}}
+		</header>
+		<main>
+			<section id="about" class="section">
+				<h2 class="section-title">About workshop.earth</h2>
+				<p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere, quam et aliquet vehicula, ante ex elementum enim, ut vestibulum nisi nulla a odio. Nulla quis erat eget ex iaculis dapibus eu non dolor. Vestibulum sodales diam nunc, vitae maximus purus congue vitae. Curabitur dictum mauris eu ante mattis, sit amet fermentum felis elementum. Etiam auctor tristique est, quis imperdiet lorem. Suspendisse a molestie lorem. In congue bibendum sem a placerat.</p>
+			</section>
+
+			{{#if features}}
+				{{#each features}}
+				{{> homepage-section }}
+				{{/each}}
+			{{/if}}
+			
+		</main>
+	</div>
 </body>
 </html>

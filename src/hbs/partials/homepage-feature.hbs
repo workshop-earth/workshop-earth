@@ -1,6 +1,10 @@
 <li class="features-item">
-	<a href="{{path}}" class="features-link">
-		{{#if thumb}}<img class="features-img" src="public/img/thumb/{{thumb.image}}" alt="{{thumb.alt}}"/>{{/if}}
+	<a href="#{{id}}" class="features-link">
+		{{#if thumb}}
+		<div class="features-img-holder">
+			<img class="features-img" src="public/img/thumb/{{thumb.image}}" alt="{{thumb.alt}}"/>
+		</div>
+		{{/if}}
 		<div class="features-copy">
 			{{#if name}}<h2 class="features-title">{{name}}</h2>{{/if}}
 			{{#if blurb}}<p class="features-blurb">{{blurb}}</p>{{/if}}

@@ -8,14 +8,27 @@
 		"intro": "Tools to visualize seismology concepts and data.",
 		"features": [
 			{
-				"name": "3D Events Engine",
-				"path": "https://3d-event-engine.netlify.com/",
+				"name": "3D Event Engine",
+				"id": "3d-event-engine",
 				"thumb": {
 					"image": "3d-events-thumb.jpg",
 					"alt": "Image thumbnail of 3D events engine app"
 				},
 				"blurb": "On July 5th 2019 a magnitude 7.1 earthquake struck Ridgecrest, CA. Effects were felt for miles and aftershocks were numerous. It's scale is visualized here.",
-				"disc": "Currently the engine is hard-coded with this specific dataset."
+				"disc": "Currently the engine is hard-coded with this specific dataset.",
+				"intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere, quam et aliquet vehicula, ante ex elementum enim, ut vestibulum nisi nulla a odio. Nulla quis erat eget ex iaculis dapibus eu non dolor. Vestibulum sodales diam nunc, vitae maximus purus congue vitae. Curabitur dictum mauris eu ante mattis, sit amet fermentum felis elementum. Etiam auctor tristique est, quis imperdiet lorem. Suspendisse a molestie lorem. In congue bibendum sem a placerat.",
+				"project-url": "https://3d-event-engine.netlify.com/"
+			},
+			{
+				"name": "Surface Generator",
+				"id": "surface-generator",
+				"thumb": {
+					"image": "placeholder-thumb.png",
+					"alt": "Image thumbnail of Surface Generator app"
+				},
+				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget.",
+				"disc": "To be developed.",
+				"intro": "To be developed."
 			}
 		]
 	}
