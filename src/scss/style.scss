@@ -36,11 +36,9 @@ small {
 }
 
 $col-width: 50%;
-$row-height: 100vh;
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, $col-width);
-	// grid-template-rows: $row-height;
 }
 
 header {
