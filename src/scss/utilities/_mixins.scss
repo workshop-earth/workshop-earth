@@ -19,3 +19,13 @@
 		@content;
 	}
 }
+
+@mixin small-nav {
+	@include breakpoint-650 {
+		margin: 0 0 0.75em 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

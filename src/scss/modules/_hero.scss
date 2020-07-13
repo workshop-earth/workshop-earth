@@ -5,6 +5,10 @@
 $mod: 'hero';
 .#{$mod}-headline {
 	margin: 0.4em auto 0.2em;
+
+	@include breakpoint-650 {
+		margin-top: 0;
+	}
 }
 .#{$mod}-intro {
 	font-size: 1.3em;

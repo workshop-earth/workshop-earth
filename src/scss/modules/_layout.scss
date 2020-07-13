@@ -31,6 +31,10 @@ header {
 header, main {
 	grid-row-start: 1;
 	padding: 2em;
+
+	@include breakpoint-650 {
+		padding: 1.2em;
+	}
 }
 
 main {

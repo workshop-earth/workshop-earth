@@ -9,14 +9,24 @@ $mod: 'nav';
 	@include breakpoint-850 {
 		display: flex;
 	}
+
+	@include breakpoint-650 {
+		flex-direction: column;
+	}
 }
 .#{$mod}-item {
 	display: inline-block;
-
+	@include small-nav;
+	
 	& + & {
 		margin-left: 1em;
-	}
+
+		@include breakpoint-650 {
+			margin-left: 0;
+		}
+	}	
 }
+
 .#{$mod}-link {}
 .#{$mod}-title {
 	font-size: 1em;
