@@ -12,11 +12,14 @@ $mod: 'nav';
 }
 .#{$mod}-item {
 	display: inline-block;
+
+	& + & {
+		margin-left: 1em;
+	}
 }
-.#{$mod}-link {
-	color: $green;
-}
+.#{$mod}-link {}
 .#{$mod}-title {
 	font-size: 1em;
+	color: $green;
 	text-decoration: underline;
 }

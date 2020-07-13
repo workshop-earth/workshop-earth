@@ -11,6 +11,11 @@
 				"name": "About",
 				"id": "about",
 				"project-url": "#about"
+			},
+			{
+				"name": "Contact",
+				"id": "contact",
+				"project-url": "#contact"
 			}
 		],
 		"features": [

@@ -9,7 +9,10 @@
 html {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	scroll-behavior: smooth;
+
+	@include breakpoint-850 {
+		scroll-behavior: smooth;
+	}
 }
 
 body {
@@ -19,6 +22,19 @@ body {
 main {
 	background: $green;
 	color: $pale;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+
+	@include breakpoint-850 {
+		overflow-y: auto;
+		scroll-snap-type: none;
+		scroll-behavior: none;
+	}
+}
+
+section {
+	scroll-snap-align: start;
 }
 
 header {

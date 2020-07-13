@@ -36,4 +36,9 @@ header, main {
 main {
 	grid-column: 2 / 3;
 	padding-top: 0;
+	height: $row-height;
+
+	@include breakpoint-850 {
+		height: auto;	
+	}
 }
