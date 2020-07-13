@@ -1,3 +1,4 @@
+@import 'utilities/mixins';
 @import 'reset';
 
 *, *:before, *:after {
@@ -36,9 +37,14 @@ small {
 }
 
 $col-width: 50%;
+$row-height: 100vh;
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, $col-width);
+
+	@include breakpoint-850 {
+		display: block;
+	}
 }
 
 header {
@@ -47,6 +53,12 @@ header {
 	left: 0;
 	width: $col-width;
 	height: $row-height;
+
+	@include breakpoint-850 {
+		position: static;
+		height: auto;
+		width: 100%;
+	}
 
 }
 

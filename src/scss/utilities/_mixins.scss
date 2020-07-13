@@ -1,0 +1,11 @@
+@mixin breakpoint-1000 {
+	@media only screen and (max-width: 1000px) {
+		@content;
+	}
+}
+
+@mixin breakpoint-850 {
+	@media only screen and (max-width: 850px) {
+		@content;
+	}
+}

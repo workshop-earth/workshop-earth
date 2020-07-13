@@ -1,43 +1,101 @@
 $mod: 'features';
 .#{$mod}-list {
 	margin-top: 2em;
+
+	@include breakpoint-850 {
+		display: flex;
+		margin-top: 1em;
+	}
 }
 .#{$mod}-item {
 	background: whitesmoke;
-	border: 2px solid #eee;
-	border-radius: 7px;
+	border: 1px solid #ddd;
 	overflow: hidden;
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+
+	@include breakpoint-850 {
+		border: none;
+		background: transparent;
+	}
+
+	& + .#{$mod}-item {
+		margin-top: 1em;
+		@include breakpoint-850 {
+			margin: 0 0 0 1em;
+		}
+	}
 }
 .#{$mod}-link {
 	text-decoration: none;
 	height: 100%;
 	width: 100%;
+	padding-right: 1em;
 	color: black;
-	display: flex;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "a b"
+						 "a c"
+						 "a d";
+	grid-column-gap: 15px;
+
+	@include breakpoint-1000 {
+		padding: 0.5em;
+		grid-template-columns: 75px 1fr;
+		grid-template-areas: "a b"
+							 "c c"
+							 "d d";
+	}
+
+	@include breakpoint-850 {
+		display: block;
+		padding: 0;
+	}
 }
-.#{$mod}-img-holder {
-	display: flex;
-	align-items: center;
-	background: white;
-}
+
 .#{$mod}-img {
-	width: 150px;
-	height: 150px;
-	flex-shrink: 0;
-}
-.#{$mod}-copy {
-	padding: 0.8em;
+	width: 100%;
+	grid-area: a;
+	align-self: center;
+
+	@include breakpoint-850 {
+		display: none;
+	}
 }
 .#{$mod}-title {
 	font-size: 1em;
 	text-decoration: underline;
+	margin-top: 0.75em;
 	margin-bottom: 0.7em;
+	grid-area: b;
+
+	@include breakpoint-1000 {
+		margin: 0.5em 0;
+		align-self: center;
+	}
+
+	@include breakpoint-850 {
+		margin: 0;
+	}
 }
 .#{$mod}-blurb {
 	font-size: 0.8em;
+	grid-area: c;
+	margin-bottom: 1em;
+
+	@include breakpoint-1000 {
+		margin: 0.5em 0;
+	}
+
+	@include breakpoint-850 {
+		display: none;
+	}
 }
 .#{$mod}-disc {
 	display: block;
-	margin-top: 1em;
+	margin-bottom: 0.75em;
+	grid-area: d;
+
+	@include breakpoint-850 {
+		display: none;
+	}
 }
