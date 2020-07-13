@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="grid">
-		<header>
+		<header id="home">
 			<div class="hero">
 				<h1 class="hero-headline">{{headline}}</h1>
 				<p class="hero-intro">{{intro}}</p>
@@ -42,6 +42,10 @@
 				<p class="section-intro">Questions? Comments? Want to get involved?</p>
 			</section>
 			
+			<a href="#home" class="back-to-top">
+				{{> icons/icon-arrow-up }}
+				{{!-- <img class="back-to-top-icon" src="public/img/icon-arrow-up.svg" /> --}}
+			</a>
 		</main>
 	</div>
 </body>
