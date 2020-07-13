@@ -12,8 +12,8 @@ $mod: 'features';
 	}
 }
 .#{$mod}-item {
-	background: whitesmoke;
-	border: 1px solid #ddd;
+	background: $white;
+	border: 1px solid $lightgreen;
 	overflow: hidden;
 
 	@include breakpoint-850 {
@@ -33,7 +33,7 @@ $mod: 'features';
 	height: 100%;
 	width: 100%;
 	padding-right: 1em;
-	color: black;
+	color: inherit;
 	display: grid;
 	grid-template-columns: 150px 1fr;
 	grid-template-rows: repeat(3, auto);
