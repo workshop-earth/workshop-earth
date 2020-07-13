@@ -20,14 +20,13 @@
 				"project-url": "https://3d-event-engine.netlify.com/"
 			},
 			{
-				"name": "Surface Generator",
-				"id": "surface-generator",
+				"name": "Station Seismograms",
+				"id": "station-seismograms",
 				"thumb": {
-					"image": "placeholder-thumb.png",
-					"alt": "Image thumbnail of Surface Generator app"
+					"image": "station-seismograms-thumb.jpg",
+					"alt": "Image thumbnail of Station Seismograms app"
 				},
 				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget.",
-				"disc": "To be developed.",
 				"intro": "To be developed."
 			}
 		]
