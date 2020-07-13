@@ -9,13 +9,23 @@ $mod: 'section';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	&:last-child {
+	&:last-of-type {
 		border: none;
+	}
+
+	@include breakpoint-650 {
+		min-height: 0;
+		padding-top: 3em;
+		padding-bottom: 3em;
 	}
 }
 .#{$mod}-title {
 	font-size: 1.8em;
 	margin: 0.5em auto 0.4em 0;
+
+	@include breakpoint-650 {
+		margin-top: 0;
+	}
 }
 .#{$mod}-intro {
 }
