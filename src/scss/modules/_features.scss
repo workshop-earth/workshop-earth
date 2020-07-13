@@ -3,29 +3,16 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $mod: 'features';
-.#{$mod}-list {
-	margin-top: 2em;
-
-	@include breakpoint-850 {
-		display: flex;
-		margin-top: 1em;
-	}
-}
 .#{$mod}-item {
 	background: $white;
 	border: 1px solid $lightgreen;
 	overflow: hidden;
+	margin-top: 1em;
 
 	@include breakpoint-850 {
 		border: none;
 		background: transparent;
-	}
-
-	& + .#{$mod}-item {
-		margin-top: 1em;
-		@include breakpoint-850 {
-			margin: 0 0 0 1em;
-		}
+		margin: 0 0 0 1em;
 	}
 }
 .#{$mod}-link {
@@ -66,8 +53,7 @@ $mod: 'features';
 	}
 }
 .#{$mod}-title {
-	font-size: 1em;
-	text-decoration: underline;
+	@extend .nav-title;
 	margin-top: 0.75em;
 	margin-bottom: 0.7em;
 	grid-area: b;

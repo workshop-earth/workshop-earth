@@ -6,6 +6,13 @@
 		},
 		"headline": "Workshop.earth",
 		"intro": "Tools to visualize seismology concepts and data.",
+		"nav": [
+			{
+				"name": "About",
+				"id": "about",
+				"project-url": "#about"
+			}
+		],
 		"features": [
 			{
 				"name": "3D Event Engine",

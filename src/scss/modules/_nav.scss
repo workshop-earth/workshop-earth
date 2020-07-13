@@ -1,0 +1,22 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Nav
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$mod: 'nav';
+.#{$mod}-list {
+	margin-top: 1em;
+
+	@include breakpoint-850 {
+		display: flex;
+	}
+}
+.#{$mod}-item {
+	display: inline-block;
+}
+.#{$mod}-link {
+	color: $green;
+}
+.#{$mod}-title {
+	font-size: 1em;
+	text-decoration: underline;
+}

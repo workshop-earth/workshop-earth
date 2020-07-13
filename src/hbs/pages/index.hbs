@@ -13,8 +13,11 @@
 				<p class="hero-intro">{{intro}}</p>
 			</div>
 		{{#if features}}
-		<nav class="features-nav">
-			<ul class="features-list">
+		<nav>
+			<ul class="nav-list">
+				{{#each nav}}
+				{{> homepage-nav }}
+				{{/each}}
 				{{#each features}}
 				{{> homepage-feature }}
 				{{/each}}
