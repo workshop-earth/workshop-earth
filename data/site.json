@@ -39,7 +39,8 @@
 					"alt": "Image thumbnail of Station Seismograms app"
 				},
 				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare bibendum lacus eu consequat. Nulla ullamcorper finibus arcu, a malesuada mi imperdiet eget.",
-				"intro": "To be developed."
+				"intro": "To be developed.",
+				"project-url": "https://station-seismograms.netlify.app/"
 			}
 		]
 	}
