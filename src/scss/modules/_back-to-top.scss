@@ -47,5 +47,5 @@ $mod: 'back-to-top';
 }
 *:target ~ .#{$mod},
 #home:target + main > .#{$mod} {
-	transition-duration: 0.3s;
+	transition-duration: $dur-mid;
 }
