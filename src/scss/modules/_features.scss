@@ -1,0 +1,93 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Features
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$mod: 'features';
+.#{$mod}-item {
+	background: $white;
+	border: 1px solid $lightgreen;
+	overflow: hidden;
+	margin-top: 1em;
+
+	@include breakpoint-850 {
+		border: none;
+		background: transparent;
+		margin: 0 0 0 1em;
+	}
+
+	@include small-nav;
+}
+.#{$mod}-link {
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	padding-right: 1em;
+	color: inherit;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "a b"
+						 "a c"
+						 "a d";
+	grid-column-gap: 15px;
+
+	@include breakpoint-1000 {
+		padding: 0.5em;
+		grid-template-columns: 75px 1fr;
+		grid-template-areas: "a b"
+							 "c c"
+							 "d d";
+	}
+
+	@include breakpoint-850 {
+		display: block;
+		padding: 0;
+	}
+}
+
+.#{$mod}-img {
+	width: 100%;
+	grid-area: a;
+	align-self: center;
+
+	@include breakpoint-850 {
+		display: none;
+	}
+}
+.#{$mod}-title {
+	@extend .nav-title;
+	margin-top: 0.75em;
+	margin-bottom: 0.7em;
+	grid-area: b;
+
+	@include breakpoint-1000 {
+		margin: 0.5em 0;
+		align-self: center;
+	}
+
+	@include breakpoint-850 {
+		margin: 0;
+	}
+}
+.#{$mod}-blurb {
+	font-size: 0.8em;
+	grid-area: c;
+	margin-bottom: 1em;
+
+	@include breakpoint-1000 {
+		margin: 0.5em 0;
+	}
+
+	@include breakpoint-850 {
+		display: none;
+	}
+}
+.#{$mod}-disc {
+	display: block;
+	margin-bottom: 0.75em;
+	grid-area: d;
+
+	@include breakpoint-850 {
+		display: none;
+	}
+}

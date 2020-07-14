@@ -1,0 +1,31 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Mixins
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin breakpoint-1000 {
+	@media only screen and (max-width: 1000px) {
+		@content;
+	}
+}
+
+@mixin breakpoint-850 {
+	@media only screen and (max-width: 850px) {
+		@content;
+	}
+}
+
+@mixin breakpoint-650 {
+	@media only screen and (max-width: 650px) {
+		@content;
+	}
+}
+
+@mixin small-nav {
+	@include breakpoint-650 {
+		margin: 0 0 0.75em 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

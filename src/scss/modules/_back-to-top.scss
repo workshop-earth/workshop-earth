@@ -1,0 +1,51 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Back to top link
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$mod: 'back-to-top';
+.#{$mod} {
+	display: none;
+
+	@include breakpoint-850 {
+		$size: 44;
+		display: block;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		background: $lightgreen;
+		height: #{$size}px;
+		width: #{$size}px;
+		border-top-left-radius: #{$size * 2}px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(100%);
+		transition: transform 0s ease-in-out;
+	}
+
+	.icon-arrow-up {
+		position: relative;
+		width: 45%;
+		left: 9%;
+	    top: 7%;
+	}
+
+	.module-style {
+		fill: $green;
+		stroke: $green;
+	}
+}
+
+
+// Target=based show/hide control
+// Need JS enhancement for manual scroll-to-top use case
+*:target ~ .#{$mod} {
+	transform: translateY(0);
+}
+#home:target + main > .#{$mod} {
+	transform: translateY(100%);
+}
+*:target ~ .#{$mod},
+#home:target + main > .#{$mod} {
+	transition-duration: $dur-mid;
+}

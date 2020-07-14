@@ -1,0 +1,48 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Page layout
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$col-width: 50%;
+$row-height: 100vh;
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, $col-width);
+
+	@include breakpoint-850 {
+		display: block;
+	}
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $col-width;
+	height: $row-height;
+
+	@include breakpoint-850 {
+		position: static;
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+header, main {
+	grid-row-start: 1;
+	padding: 2em;
+
+	@include breakpoint-650 {
+		padding: 1.2em;
+	}
+}
+
+main {
+	grid-column: 2 / 3;
+	padding-top: 0;
+	height: $row-height;
+
+	@include breakpoint-850 {
+		height: auto;	
+	}
+}

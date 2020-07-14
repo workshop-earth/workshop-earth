@@ -1,0 +1,38 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Button
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$mod: 'button';
+$sel: '.#{$mod}, #{$mod}, input[type="submit"]';
+
+@mixin button-theme($color) {
+	color: $color;
+	border-color: $color;
+}
+
+#{$sel} {
+	display: inline-block;
+	align-self: start;
+	color: $white;
+	border: 1px solid $white;
+	min-width: 100px;
+	padding: 0.6em 1.7em;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: background $dur-fast linear,
+				color $dur-fast linear;
+
+	&:hover {
+		background: $white;
+		color: $green;
+	}
+
+	&.#{$mod}-primary {
+		@include button-theme($gold);
+
+		&:hover {
+			background: $gold;
+			color: $green;
+		}
+	}
+}

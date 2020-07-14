@@ -1,69 +1,20 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Main CSS stack
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Utilities (no output)
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+// Vendors
 @import 'reset';
 
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-
-html {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	scroll-behavior: smooth;
-}
-
-body {}
-
-h1 {
-	font-size: 2.2em;
-}
-
-h2 {
-	font-size: 1.2em;
-}
-
-p {
-	font-size: 1em;
-	line-height: 1.4;
-	& + p {
-		margin-top: 1em;
-	}
-}
-
-small {
-	font-size: 0.6em;
-	color: gray;
-	line-height: 1.4;
-	letter-spacing: 0.05em;
-}
-
-$col-width: 50%;
-$row-height: 100vh;
-.grid {
-	display: grid;
-	grid-template-columns: repeat(2, $col-width);
-	// grid-template-rows: $row-height;
-}
-
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: $col-width;
-	height: $row-height;
-
-}
-
-header, main {
-	grid-row-start: 1;
-	padding: 2em;
-}
-
-main {
-	grid-column: 2 / 3;
-	padding-top: 0;
-	background: #333;
-	color: #eee;
-}
-
-@import 'hero';
-@import 'features';
-@import 'section';
+// Site modules
+@import 'modules/base';
+@import 'modules/nav';
+@import 'modules/layout';
+@import 'modules/back-to-top';
+@import 'modules/button';
+@import 'modules/hero';
+@import 'modules/features';
+@import 'modules/section';
